@@ -7266,7 +7266,7 @@ function isDirectory(fsPath, useStat = false) {
 }
 exports.isDirectory = isDirectory;
 /**
- * On OSX/Linux, true if path starts with '/'. On Windows, true for paths like:
+ * On macOS/Linux, true if path starts with '/'. On Windows, true for paths like:
  * \, \hello, \\hello\share, C:, and C:\hello (and corresponding alternate separator cases).
  */
 function isRooted(p) {
@@ -7521,7 +7521,7 @@ class ToolRunner extends events.EventEmitter {
             }
         }
         else {
-            // OSX/Linux - this can likely be improved with some form of quoting.
+            // macOS/Linux - this can likely be improved with some form of quoting.
             // creating processes on Unix is fundamentally different than Windows.
             // on Unix, execvp() takes an arg array.
             cmd += toolPath;
