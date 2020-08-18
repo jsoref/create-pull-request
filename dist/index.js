@@ -2760,7 +2760,7 @@ module.exports = require("crypto");
 
 "use strict";
 
-// Older verions of Node.js might not have `util.getSystemErrorName()`.
+// Older versions of Node.js might not have `util.getSystemErrorName()`.
 // In that case, fall back to a deprecated internal.
 const util = __webpack_require__(669);
 
